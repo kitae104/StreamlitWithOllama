@@ -47,7 +47,7 @@ if page == "Home":
         st.image(
             "https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=1200&auto=format&fit=crop",
             caption="Unsplash 예시 이미지",
-            use_column_width=True,
+            use_container_width=True,
         )
     
 elif page == "About":

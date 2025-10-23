@@ -63,7 +63,7 @@ if page == "Home":
         st.image(
             "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
             caption="홈 대표 이미지",
-            use_column_width=True,
+            use_container_width=True,
         )
         st.markdown('</div>', unsafe_allow_html=True)
 
