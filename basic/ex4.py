@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+import numpy as np
 
 st.set_page_config(page_title="메뉴가 있는 홈페이지", page_icon="🧭", layout="wide")
 
@@ -23,7 +25,7 @@ st.write("")
 # --- 사이드바: 라디오 메뉴 ---
 with st.sidebar:
     st.header("🧭 메뉴")
-    page = st.radio("페이지 이동", ["Home", "About"], index=0)
+    page = st.radio("페이지 이동", ["Home", "Data", "About"], index=0)
 
 # --- 본문: 페이지별 콘텐츠 ---
 if page == "Home":
@@ -82,3 +84,4 @@ elif page == "Data":
         st.line_chart(df.set_index("day")["value"])
     else:
         st.bar_chart(df.set_index("day")["value"])
+        
